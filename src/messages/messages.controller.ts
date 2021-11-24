@@ -5,9 +5,9 @@ import { MessagesService } from './messages.service';
 export class MessagesController {
     messagesService: MessagesService
 
-    constructor() {
+    constructor(repo: MessagesService) {
 
-    this.messagesService = new MessagesService()
+    this.messagesService = repo
     }
 
 
