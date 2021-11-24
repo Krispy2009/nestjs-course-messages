@@ -3,12 +3,8 @@ import { CreateMessageDTO } from './dtos/create-message.dto';
 import { MessagesService } from './messages.service';
 @Controller('messages')
 export class MessagesController {
-    messagesService: MessagesService
 
-    constructor(repo: MessagesService) {
-
-    this.messagesService = repo
-    }
+    constructor(public messagesService: MessagesService) {}
 
 
 @Get()
